@@ -1,6 +1,5 @@
 package KafkaProject;
 
-
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -31,6 +30,7 @@ public class ElasticSearchConsumer {
 
     public static RestHighLevelClient createClient(){
 
+        // Put current hostname, username and password
         String hostname = "kafka-101-1871345921.us-west-2.bonsaisearch.net";
         String username = "raa8lz4ogn";
         String password = "p0poe0svue";
@@ -51,7 +51,6 @@ public class ElasticSearchConsumer {
 
         RestHighLevelClient client = new RestHighLevelClient(builder);
         return client;
-
 
     }
 
